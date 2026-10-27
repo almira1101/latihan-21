@@ -1,0 +1,13 @@
+const prompt = require("prompt-sync")({ sigint: true });
+let x = Number(prompt("Masukkan nilai x : "));
+let y = Number(prompt("Masukkan nilai y : "));
+let z = Number(prompt("Masukkan nilai z : "));
+let terbesar = x;
+let terkecil = x;
+if (y > terbesar) terbesar = y;
+if (z > terbesar) terbesar = z;
+if (y < terkecil) terkecil = y;
+if (z < terkecil) terkecil = z;
+console.log("____________________________");
+console.log(`Nilai Terbesar : ${terbesar}`);
+console.log(`Nilai Terkecil : ${terkecil}`);
